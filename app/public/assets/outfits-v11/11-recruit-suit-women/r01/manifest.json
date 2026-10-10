@@ -1,0 +1,262 @@
+{
+  "schemaVersion": 1,
+  "outfit": "11-recruit-suit-women",
+  "revision": "r01",
+  "interface": "makerchip-body-v4-shoe-anchors-14",
+  "units": "mm",
+  "up": "+Z",
+  "front": "-Y",
+  "coordinates": "final-assembly",
+  "socketState": "solid neutral stock; no pins or precision sockets",
+  "registrationStatus": "registered-v11-final",
+  "layout": {
+    "schemaVersion": 1,
+    "id": "makerchip-body-v4-shoe-anchors-14",
+    "appearanceBasis": "outfits-v11-final-14",
+    "waistPlane": 24,
+    "footPlane": 9,
+    "footX": 11,
+    "footY": 0,
+    "neckSeat": 49.3,
+    "neckFloor": 43,
+    "headCenterZ": 73.4,
+    "headY": -1.5,
+    "overallTop": 97.4,
+    "waistMale": [
+      14,
+      10
+    ],
+    "pegInsertion": 4,
+    "waistClearance": 0.075,
+    "footClearance": 0.075,
+    "neckClearance": 0,
+    "waistOutlineRadii": [
+      17,
+      11.2
+    ],
+    "toeOutDegrees": 14
+  },
+  "adjustments": {
+    "waistRadialRatioLimits": [
+      0.75,
+      1.3
+    ],
+    "waistContourMethod": "height-dependent torso convex perimeters; 85% upper-section radius guard; fists excluded",
+    "waistBlendUpperMm": 4.5,
+    "waistBlendLowerMm": 5,
+    "waistOutlineRadii": [
+      17,
+      11.2
+    ],
+    "handInner": 18,
+    "lowerHeightFromMm": 9,
+    "lowerHeightToMm": 15,
+    "toeOutDegrees": 14,
+    "thighInsetMm": 0
+  },
+  "provenance": {
+    "parentManifest": "generator/public/assets/outfits-v10/11-recruit-suit-women/r01/manifest.json",
+    "parentManifestSha256": "dac592b0d43a1c315662a0ed8ad99f8d617eaa97321698c945441debd79448d1",
+    "shoeCorrection": {
+      "translationBeforeToeOutMm": [
+        0,
+        6,
+        0
+      ],
+      "axisRelativeToShoeMm": [
+        0,
+        -6,
+        0
+      ],
+      "rawFile": "models/exports/outfits-v11/raw/11-recruit-suit-women.mesh",
+      "rawSha256": "71137181447db9a8360e0c370f96c899d393fde35a281e3aafd993c5926c0de1",
+      "method": "rebuild ankle host from unfilled raw shoe; keep common pin and lower-body coordinates"
+    }
+  },
+  "files": [
+    {
+      "part": "upper-body",
+      "file": "upper-body.mesh",
+      "sha256": "14bbd0b57e6f02e69e9f3fc829e7604e3d1a278ace18bfa94feb304cfcd8216e",
+      "bytes": 963544,
+      "status": "NoError",
+      "components": 1,
+      "volumeMm3": 18251.274208942537,
+      "triangles": 53528,
+      "bounds": {
+        "min": [
+          -27.99298858642578,
+          -12.997818946838379,
+          24
+        ],
+        "max": [
+          28.0000057220459,
+          12.758535385131836,
+          54.499786376953125
+        ]
+      },
+      "removedComponents": []
+    },
+    {
+      "part": "lower-body",
+      "file": "lower-body.mesh",
+      "sha256": "bd326c9261e3284d843700b54deb2cb4a803159f11fa26b6309b7d20987bdff3",
+      "bytes": 264424,
+      "status": "NoError",
+      "components": 1,
+      "volumeMm3": 8126.037509306224,
+      "triangles": 14688,
+      "bounds": {
+        "min": [
+          -18.3404483795166,
+          -12.33669662475586,
+          9
+        ],
+        "max": [
+          18.174732208251953,
+          11.278308868408203,
+          24
+        ]
+      },
+      "removedComponents": []
+    },
+    {
+      "part": "shoe-left",
+      "file": "shoe-left.mesh",
+      "sha256": "bd12e134a5a0ed94fcba0f5cce93d275a8c592cda430a9454b1c7e9d7d66af6e",
+      "bytes": 768208,
+      "status": "NoError",
+      "components": 1,
+      "volumeMm3": 1264.1059473875616,
+      "triangles": 42676,
+      "bounds": {
+        "min": [
+          -19.9133358001709,
+          -16.339717864990234,
+          0
+        ],
+        "max": [
+          -4.646492004394531,
+          9.258490562438965,
+          9
+        ]
+      },
+      "removedComponents": [
+        {
+          "volumeMm3": -1.1104165798996447e-05,
+          "bounds": {
+            "min": [
+              -7.1763916015625,
+              -0.9902793765068054,
+              2.676657199859619
+            ],
+            "max": [
+              -7.1385955810546875,
+              -0.9140990376472473,
+              2.700000047683716
+            ]
+          }
+        },
+        {
+          "volumeMm3": -0.0002119331988593388,
+          "bounds": {
+            "min": [
+              -7.205706596374512,
+              -1.707490086555481,
+              2.614558219909668
+            ],
+            "max": [
+              -7.095336437225342,
+              -1.5583736896514893,
+              2.700000047683716
+            ]
+          }
+        },
+        {
+          "volumeMm3": -0.00034250540394183495,
+          "bounds": {
+            "min": [
+              -7.19589376449585,
+              -1.5287922620773315,
+              2.5897634029388428
+            ],
+            "max": [
+              -7.102578639984131,
+              -1.4044402837753296,
+              2.700000047683716
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "part": "shoe-right",
+      "file": "shoe-right.mesh",
+      "sha256": "dd7aec6bb912c3dc0d97307986bebc0fedc67fcecc61c23b3d6cd55ecefb0ccb",
+      "bytes": 768208,
+      "status": "NoError",
+      "components": 1,
+      "volumeMm3": 1264.1059473875616,
+      "triangles": 42676,
+      "bounds": {
+        "min": [
+          4.646492004394531,
+          -16.339717864990234,
+          0
+        ],
+        "max": [
+          19.9133358001709,
+          9.258490562438965,
+          9
+        ]
+      },
+      "removedComponents": [
+        {
+          "volumeMm3": -1.1104165798996447e-05,
+          "bounds": {
+            "min": [
+              7.1385955810546875,
+              -0.9902793765068054,
+              2.676657199859619
+            ],
+            "max": [
+              7.1763916015625,
+              -0.9140990376472473,
+              2.700000047683716
+            ]
+          }
+        },
+        {
+          "volumeMm3": -0.00021193319885933967,
+          "bounds": {
+            "min": [
+              7.095336437225342,
+              -1.707490086555481,
+              2.614558219909668
+            ],
+            "max": [
+              7.205706596374512,
+              -1.5583736896514893,
+              2.700000047683716
+            ]
+          }
+        },
+        {
+          "volumeMm3": -0.0003425054039418354,
+          "bounds": {
+            "min": [
+              7.102578639984131,
+              -1.5287922620773315,
+              2.5897634029388428
+            ],
+            "max": [
+              7.19589376449585,
+              -1.4044402837753296,
+              2.700000047683716
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

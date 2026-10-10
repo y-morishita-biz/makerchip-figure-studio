@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "makerchip-body-v4-shoe-anchors-14",
+  "appearanceBasis": "outfits-v11-final-14",
+  "waistPlane": 24,
+  "footPlane": 9,
+  "footX": 11,
+  "footY": 0,
+  "neckSeat": 49.3,
+  "neckFloor": 43,
+  "headCenterZ": 73.4,
+  "headY": -1.5,
+  "overallTop": 97.4,
+  "waistMale": [
+    14,
+    10
+  ],
+  "pegInsertion": 4,
+  "waistClearance": 0.075,
+  "footClearance": 0.075,
+  "neckClearance": 0,
+  "waistOutlineRadii": [
+    17,
+    11.2
+  ],
+  "toeOutDegrees": 14
+}

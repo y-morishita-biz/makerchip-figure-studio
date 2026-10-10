@@ -1,0 +1,170 @@
+{
+  "schemaVersion": 1,
+  "outfit": "19-clown",
+  "revision": "r01",
+  "interface": "makerchip-body-v4-shoe-anchors-14",
+  "units": "mm",
+  "up": "+Z",
+  "front": "-Y",
+  "coordinates": "final-assembly",
+  "socketState": "solid neutral stock; no pins or precision sockets",
+  "registrationStatus": "registered-v11-final",
+  "layout": {
+    "schemaVersion": 1,
+    "id": "makerchip-body-v4-shoe-anchors-14",
+    "appearanceBasis": "outfits-v11-final-14",
+    "waistPlane": 24,
+    "footPlane": 9,
+    "footX": 11,
+    "footY": 0,
+    "neckSeat": 49.3,
+    "neckFloor": 43,
+    "headCenterZ": 73.4,
+    "headY": -1.5,
+    "overallTop": 97.4,
+    "waistMale": [
+      14,
+      10
+    ],
+    "pegInsertion": 4,
+    "waistClearance": 0.075,
+    "footClearance": 0.075,
+    "neckClearance": 0,
+    "waistOutlineRadii": [
+      17,
+      11.2
+    ],
+    "toeOutDegrees": 14
+  },
+  "adjustments": {
+    "waistRadialRatioLimits": [
+      0.75,
+      1.3
+    ],
+    "waistContourMethod": "height-dependent torso convex perimeters; 85% upper-section radius guard; fists excluded",
+    "waistBlendUpperMm": 4.5,
+    "waistBlendLowerMm": 5,
+    "waistOutlineRadii": [
+      17,
+      11.2
+    ],
+    "handInner": 20,
+    "lowerHeightFromMm": 9,
+    "lowerHeightToMm": 15,
+    "toeOutDegrees": 14,
+    "thighInsetMm": 0
+  },
+  "provenance": {
+    "parentManifest": "generator/public/assets/outfits-v10/19-clown/r01/manifest.json",
+    "parentManifestSha256": "b20747a9d97764cb0e43444696d3bd4265910f8ee5f7d4e3377323b59957d664",
+    "shoeCorrection": {
+      "translationBeforeToeOutMm": [
+        0,
+        -7,
+        0
+      ],
+      "axisRelativeToShoeMm": [
+        0,
+        7,
+        0
+      ],
+      "rawFile": "models/exports/outfits-v11/raw/19-clown.mesh",
+      "rawSha256": "c61fd8f058de61a34f23471f6c4a901f31d2e5d17b0862ed358ec1bb6d7a6bbf",
+      "method": "rebuild ankle host from unfilled raw shoe; keep common pin and lower-body coordinates"
+    }
+  },
+  "files": [
+    {
+      "part": "upper-body",
+      "file": "upper-body.mesh",
+      "sha256": "4396bc1f4baf8fd604acd9fbeb30afae675b588aa7162ebe79754c51271d4b4e",
+      "bytes": 1327612,
+      "status": "NoError",
+      "components": 1,
+      "volumeMm3": 24179.580299901038,
+      "triangles": 73754,
+      "bounds": {
+        "min": [
+          -30.99603843688965,
+          -15.249992370605469,
+          24
+        ],
+        "max": [
+          30.999652862548828,
+          15.243922233581543,
+          54.99973678588867
+        ]
+      },
+      "removedComponents": []
+    },
+    {
+      "part": "lower-body",
+      "file": "lower-body.mesh",
+      "sha256": "39587cdf2952ccdf71efe7dba8bdfa183b6da273810752998125d787e6a967fa",
+      "bytes": 718888,
+      "status": "NoError",
+      "components": 1,
+      "volumeMm3": 10479.377850803708,
+      "triangles": 39936,
+      "bounds": {
+        "min": [
+          -19.963388442993164,
+          -14.17392349243164,
+          9
+        ],
+        "max": [
+          20.149669647216797,
+          13.742867469787598,
+          24
+        ]
+      },
+      "removedComponents": []
+    },
+    {
+      "part": "shoe-left",
+      "file": "shoe-left.mesh",
+      "sha256": "02182a5bb3d987af457f5496f2b3436174cd40df633c9f5651ce5009cc4e87eb",
+      "bytes": 927256,
+      "status": "NoError",
+      "components": 1,
+      "volumeMm3": 3427.0091380561335,
+      "triangles": 51512,
+      "bounds": {
+        "min": [
+          -24.167112350463867,
+          -23.3031005859375,
+          0
+        ],
+        "max": [
+          -3.2720906734466553,
+          8.365777015686035,
+          9
+        ]
+      },
+      "removedComponents": []
+    },
+    {
+      "part": "shoe-right",
+      "file": "shoe-right.mesh",
+      "sha256": "bebce0e7e52e1388dc35b061a4ee0baf89f33f438529e5e225bf42c4d03c5952",
+      "bytes": 927256,
+      "status": "NoError",
+      "components": 1,
+      "volumeMm3": 3427.0091380561335,
+      "triangles": 51512,
+      "bounds": {
+        "min": [
+          3.2720906734466553,
+          -23.3031005859375,
+          0
+        ],
+        "max": [
+          24.167112350463867,
+          8.365777015686035,
+          9
+        ]
+      },
+      "removedComponents": []
+    }
+  ]
+}

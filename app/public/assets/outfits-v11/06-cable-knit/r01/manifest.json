@@ -1,0 +1,173 @@
+{
+  "schemaVersion": 1,
+  "outfit": "06-cable-knit",
+  "revision": "r01",
+  "interface": "makerchip-body-v4-shoe-anchors-14",
+  "units": "mm",
+  "up": "+Z",
+  "front": "-Y",
+  "coordinates": "final-assembly",
+  "socketState": "solid neutral stock; no pins or precision sockets",
+  "registrationStatus": "registered-v11-final",
+  "layout": {
+    "schemaVersion": 1,
+    "id": "makerchip-body-v4-shoe-anchors-14",
+    "appearanceBasis": "outfits-v11-final-14",
+    "waistPlane": 24,
+    "footPlane": 9,
+    "footX": 11,
+    "footY": 0,
+    "neckSeat": 49.3,
+    "neckFloor": 43,
+    "headCenterZ": 73.4,
+    "headY": -1.5,
+    "overallTop": 97.4,
+    "waistMale": [
+      14,
+      10
+    ],
+    "pegInsertion": 4,
+    "waistClearance": 0.075,
+    "footClearance": 0.075,
+    "neckClearance": 0,
+    "waistOutlineRadii": [
+      17,
+      11.2
+    ],
+    "toeOutDegrees": 14
+  },
+  "adjustments": {
+    "waistRadialRatioLimits": [
+      0.75,
+      1.3
+    ],
+    "waistContourMethod": "height-dependent torso convex perimeters; 85% upper-section radius guard; fists excluded",
+    "waistBlendUpperMm": 4.5,
+    "waistBlendLowerMm": 5,
+    "waistOutlineRadii": [
+      17,
+      11.2
+    ],
+    "handInner": 19,
+    "lowerHeightFromMm": 9,
+    "lowerHeightToMm": 15,
+    "toeOutDegrees": 14,
+    "thighInsetMm": 0
+  },
+  "provenance": {
+    "parentManifest": "generator/public/assets/outfits-v10/06-cable-knit/r01/manifest.json",
+    "parentManifestSha256": "bcc0f5f2009711d777f876073f2036bd59cdd388ce788a3b0af68be8838a6d34",
+    "shoeCorrection": null
+  },
+  "files": [
+    {
+      "part": "upper-body",
+      "file": "upper-body.mesh",
+      "sha256": "195818cce4f26b2b3024677e5c78d3e0054c0fc9ce2612274ebab9c12a5b52a9",
+      "bytes": 3451372,
+      "status": "NoError",
+      "components": 1,
+      "volumeMm3": 22237.765239620174,
+      "triangles": 191742,
+      "bounds": {
+        "min": [
+          -29.493667602539062,
+          -14.365462303161621,
+          24
+        ],
+        "max": [
+          29.496761322021484,
+          14.558004379272461,
+          56.48995590209961
+        ]
+      },
+      "removedComponents": []
+    },
+    {
+      "part": "lower-body",
+      "file": "lower-body.mesh",
+      "sha256": "a36dcc7a2b5b131618b8ba13fdc1b8d76f36a1c93e13754c7660ed1706b7e735",
+      "bytes": 1165000,
+      "status": "NoError",
+      "components": 1,
+      "volumeMm3": 7852.689233040979,
+      "triangles": 64720,
+      "bounds": {
+        "min": [
+          -18.69007682800293,
+          -11.35661792755127,
+          9
+        ],
+        "max": [
+          18.697650909423828,
+          12.055368423461914,
+          24
+        ]
+      },
+      "removedComponents": [
+        {
+          "volumeMm3": 2.5750628192128255e-06,
+          "bounds": {
+            "min": [
+              16.685997009277344,
+              0.4153459072113037,
+              23.97618293762207
+            ],
+            "max": [
+              16.728893280029297,
+              0.43181365728378296,
+              24
+            ]
+          },
+          "reason": "sub-0.0001 mm3 fragment after Float32 serialization"
+        }
+      ]
+    },
+    {
+      "part": "shoe-left",
+      "file": "shoe-left.mesh",
+      "sha256": "87a54fd063d6f02e44463facc739e931ec043bc624ce841abdcd77b9bb920f79",
+      "bytes": 379552,
+      "status": "NoError",
+      "components": 1,
+      "volumeMm3": 2413.9572748733085,
+      "triangles": 21084,
+      "bounds": {
+        "min": [
+          -22.44278335571289,
+          -18.234983444213867,
+          0
+        ],
+        "max": [
+          -2.7364742755889893,
+          8.433619499206543,
+          9
+        ]
+      },
+      "removedComponents": []
+    },
+    {
+      "part": "shoe-right",
+      "file": "shoe-right.mesh",
+      "sha256": "e1ec42e890a51d8e41d7748c8573e630c67ded857f2feef2d5c6c9113c001844",
+      "bytes": 379552,
+      "status": "NoError",
+      "components": 1,
+      "volumeMm3": 2413.9572748733085,
+      "triangles": 21084,
+      "bounds": {
+        "min": [
+          2.7364742755889893,
+          -18.234983444213867,
+          0
+        ],
+        "max": [
+          22.44278335571289,
+          8.433619499206543,
+          9
+        ]
+      },
+      "removedComponents": []
+    }
+  ]
+}

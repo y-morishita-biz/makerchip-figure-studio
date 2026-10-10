@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "sourceCommit": "38be17e1b720588d07522249f2072e4631c25f52",
+  "sourceSha256": "a983683401ad15c11167629284c029ff7b4a6afb2c627982a71b704ba3627c1d",
+  "translation": [
+    0,
+    0,
+    5
+  ],
+  "note": "Approved v9 fixed head, unmodified baseline ring mechanism. No spring.",
+  "files": [
+    {
+      "id": "ring-front",
+      "file": "ring-front.mesh",
+      "sha256": "cd2ba9681340890c88fa71c7ac365e40b3854063419082928c1b2767dfb2f21b"
+    },
+    {
+      "id": "ring-back",
+      "file": "ring-back.mesh",
+      "sha256": "05aecad828e62f9c1518cd2a426200ff2922d13906eb8a8657870be446ef45fd"
+    },
+    {
+      "id": "chip",
+      "file": "chip.mesh",
+      "sha256": "dff831baaa38713de7d1bf353df4c2cd2c682a454caccff4050bcce5c8b969b4"
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "outfit": "12-school-uniform-men",
+  "revision": "r01",
+  "interface": "makerchip-body-v4-shoe-anchors-14",
+  "units": "mm",
+  "up": "+Z",
+  "front": "-Y",
+  "coordinates": "final-assembly",
+  "socketState": "solid neutral stock; no pins or precision sockets",
+  "registrationStatus": "registered-v11-final",
+  "layout": {
+    "schemaVersion": 1,
+    "id": "makerchip-body-v4-shoe-anchors-14",
+    "appearanceBasis": "outfits-v11-final-14",
+    "waistPlane": 24,
+    "footPlane": 9,
+    "footX": 11,
+    "footY": 0,
+    "neckSeat": 49.3,
+    "neckFloor": 43,
+    "headCenterZ": 73.4,
+    "headY": -1.5,
+    "overallTop": 97.4,
+    "waistMale": [
+      14,
+      10
+    ],
+    "pegInsertion": 4,
+    "waistClearance": 0.075,
+    "footClearance": 0.075,
+    "neckClearance": 0,
+    "waistOutlineRadii": [
+      17,
+      11.2
+    ],
+    "toeOutDegrees": 14
+  },
+  "adjustments": {
+    "waistRadialRatioLimits": [
+      0.75,
+      1.3
+    ],
+    "waistContourMethod": "height-dependent torso convex perimeters; 85% upper-section radius guard; fists excluded",
+    "waistBlendUpperMm": 4.5,
+    "waistBlendLowerMm": 5,
+    "waistOutlineRadii": [
+      17,
+      11.2
+    ],
+    "handInner": 18.5,
+    "lowerHeightFromMm": 9,
+    "lowerHeightToMm": 15,
+    "toeOutDegrees": 14,
+    "thighInsetMm": 0
+  },
+  "provenance": {
+    "parentManifest": "generator/public/assets/outfits-v10/12-school-uniform-men/r01/manifest.json",
+    "parentManifestSha256": "518ca2777faf6ff1ee61501fcf8358574e0ecda09491d183b06f78187739a89d",
+    "shoeCorrection": null
+  },
+  "files": [
+    {
+      "part": "upper-body",
+      "file": "upper-body.mesh",
+      "sha256": "bb0d398780fd67f80d03be69c46e59df40cd2124f51032ef97da1d4fb2b14392",
+      "bytes": 807700,
+      "status": "NoError",
+      "components": 1,
+      "volumeMm3": 20027.1719505888,
+      "triangles": 44870,
+      "bounds": {
+        "min": [
+          -28.497154235839844,
+          -13.688206672668457,
+          24
+        ],
+        "max": [
+          28.496261596679688,
+          13.38123893737793,
+          54.6965217590332
+        ]
+      },
+      "removedComponents": []
+    },
+    {
+      "part": "lower-body",
+      "file": "lower-body.mesh",
+      "sha256": "d7ff7fa75d5e90d48d55739c351ea3cdf037edde671183fe598d9a05da88c7ce",
+      "bytes": 440392,
+      "status": "NoError",
+      "components": 1,
+      "volumeMm3": 6978.824434839859,
+      "triangles": 24464,
+      "bounds": {
+        "min": [
+          -18.01319694519043,
+          -11.201350212097168,
+          9
+        ],
+        "max": [
+          18.054229736328125,
+          11.198548316955566,
+          24
+        ]
+      },
+      "removedComponents": []
+    },
+    {
+      "part": "shoe-left",
+      "file": "shoe-left.mesh",
+      "sha256": "adff9d9e7b1a452882a205195e5fe60d404b1473bcbc2eb3fdaf04869eebdf18",
+      "bytes": 375556,
+      "status": "NoError",
+      "components": 1,
+      "volumeMm3": 2125.9640363098215,
+      "triangles": 20862,
+      "bounds": {
+        "min": [
+          -20.905139923095703,
+          -16.54928970336914,
+          0
+        ],
+        "max": [
+          -3.3554980754852295,
+          10.130486488342285,
+          9
+        ]
+      },
+      "removedComponents": []
+    },
+    {
+      "part": "shoe-right",
+      "file": "shoe-right.mesh",
+      "sha256": "f25a67053e26e8d76d56d7676d120135b31730b8074e8fb755b6b35601454537",
+      "bytes": 375556,
+      "status": "NoError",
+      "components": 1,
+      "volumeMm3": 2125.9640363098215,
+      "triangles": 20862,
+      "bounds": {
+        "min": [
+          3.3554980754852295,
+          -16.54928970336914,
+          0
+        ],
+        "max": [
+          20.905139923095703,
+          10.130486488342285,
+          9
+        ]
+      },
+      "removedComponents": []
+    }
+  ]
+}

@@ -1,0 +1,172 @@
+{
+  "schemaVersion": 1,
+  "layout": {
+    "schemaVersion": 1,
+    "id": "makerchip-body-v4-shoe-anchors-14",
+    "appearanceBasis": "outfits-v11-final-14",
+    "waistPlane": 24,
+    "footPlane": 9,
+    "footX": 11,
+    "footY": 0,
+    "neckSeat": 49.3,
+    "neckFloor": 43,
+    "headCenterZ": 73.4,
+    "headY": -1.5,
+    "overallTop": 97.4,
+    "waistMale": [
+      14,
+      10
+    ],
+    "pegInsertion": 4,
+    "waistClearance": 0.075,
+    "footClearance": 0.075,
+    "neckClearance": 0,
+    "waistOutlineRadii": [
+      17,
+      11.2
+    ],
+    "toeOutDegrees": 14
+  },
+  "outfits": [
+    {
+      "outfit": "original",
+      "manifest": "original/r01/manifest.json",
+      "label": "パーカー",
+      "revision": "r01",
+      "geometryPassed": true
+    },
+    {
+      "outfit": "pocket-01",
+      "manifest": "pocket-01/r01/manifest.json",
+      "label": "ポケットTシャツ",
+      "revision": "r01",
+      "geometryPassed": true
+    },
+    {
+      "outfit": "02-work-jacket",
+      "manifest": "02-work-jacket/r01/manifest.json",
+      "label": "ワークジャケット",
+      "revision": "r01",
+      "geometryPassed": true
+    },
+    {
+      "outfit": "03-varsity-jacket",
+      "manifest": "03-varsity-jacket/r01/manifest.json",
+      "label": "スタジャン",
+      "revision": "r01",
+      "geometryPassed": true
+    },
+    {
+      "outfit": "04-chef",
+      "manifest": "04-chef/r01/manifest.json",
+      "label": "コックコート",
+      "revision": "r01",
+      "geometryPassed": true
+    },
+    {
+      "outfit": "05-tailored-suit",
+      "manifest": "05-tailored-suit/r01/manifest.json",
+      "label": "テーラードスーツ",
+      "revision": "r01",
+      "geometryPassed": true
+    },
+    {
+      "outfit": "06-cable-knit",
+      "manifest": "06-cable-knit/r01/manifest.json",
+      "label": "ケーブルニット",
+      "revision": "r01",
+      "geometryPassed": true
+    },
+    {
+      "outfit": "07-sailor",
+      "manifest": "07-sailor/r01/manifest.json",
+      "label": "セーラー",
+      "revision": "r01",
+      "geometryPassed": true
+    },
+    {
+      "outfit": "08-tech-vest",
+      "manifest": "08-tech-vest/r01/manifest.json",
+      "label": "テックベスト",
+      "revision": "r01",
+      "geometryPassed": true
+    },
+    {
+      "outfit": "09-casual-shirt",
+      "manifest": "09-casual-shirt/r01/manifest.json",
+      "label": "カジュアルシャツ",
+      "revision": "r01",
+      "geometryPassed": true
+    },
+    {
+      "outfit": "10-recruit-suit-men",
+      "manifest": "10-recruit-suit-men/r01/manifest.json",
+      "label": "リクルートスーツ(男性)",
+      "revision": "r01",
+      "geometryPassed": true
+    },
+    {
+      "outfit": "11-recruit-suit-women",
+      "manifest": "11-recruit-suit-women/r01/manifest.json",
+      "label": "リクルートスーツ(女性)",
+      "revision": "r01",
+      "geometryPassed": true
+    },
+    {
+      "outfit": "12-school-uniform-men",
+      "manifest": "12-school-uniform-men/r01/manifest.json",
+      "label": "学生服(男性)",
+      "revision": "r01",
+      "geometryPassed": true
+    },
+    {
+      "outfit": "13-school-uniform-women",
+      "manifest": "13-school-uniform-women/r01/manifest.json",
+      "label": "学生服(女性)",
+      "revision": "r01",
+      "geometryPassed": true
+    },
+    {
+      "outfit": "14-astronaut",
+      "manifest": "14-astronaut/r01/manifest.json",
+      "label": "宇宙飛行士",
+      "revision": "r01",
+      "geometryPassed": true
+    },
+    {
+      "outfit": "15-knight",
+      "manifest": "15-knight/r01/manifest.json",
+      "label": "騎士",
+      "revision": "r01",
+      "geometryPassed": true
+    },
+    {
+      "outfit": "16-pirate",
+      "manifest": "16-pirate/r01/manifest.json",
+      "label": "海賊",
+      "revision": "r01",
+      "geometryPassed": true
+    },
+    {
+      "outfit": "17-festival-happi",
+      "manifest": "17-festival-happi/r01/manifest.json",
+      "label": "お祭り法被",
+      "revision": "r01",
+      "geometryPassed": true
+    },
+    {
+      "outfit": "18-dinosaur",
+      "manifest": "18-dinosaur/r01/manifest.json",
+      "label": "恐竜衣装",
+      "revision": "r01",
+      "geometryPassed": true
+    },
+    {
+      "outfit": "19-clown",
+      "manifest": "19-clown/r01/manifest.json",
+      "label": "ピエロ",
+      "revision": "r01",
+      "geometryPassed": true
+    }
+  ]
+}

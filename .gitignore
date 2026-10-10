@@ -1,0 +1,8 @@
+.DS_Store
+node_modules/
+app/dist/
+app/test-results/
+app/playwright-report/
+_site/
+*.stl
+*.3mf

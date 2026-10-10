@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MakerChip Figure Studio — 着せ替えて、つくろう。</title>
+<meta name="description" content="20種類の上着・ボトムス・靴を組み合わせて、MakerChipをはめ込む小さなフィギュアをデザイン。色を添えて、3Dプリント用のSTLまでブラウザだけで書き出せます。">
+<meta name="theme-color" content="#e8e8e5">
+<meta property="og:type" content="website">
+<meta property="og:title" content="MakerChip Figure Studio — 着せ替えて、つくろう。">
+<meta property="og:description" content="20種類の上着・ボトムス・靴、8,000通りの組み合わせ。ブラウザで着せ替えて、3Dプリント用のSTLを書き出す。">
+<meta property="og:image" content="https://y-morishita-biz.github.io/makerchip-figure-studio/assets/og.png">
+<meta property="og:url" content="https://y-morishita-biz.github.io/makerchip-figure-studio/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@penomo">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/lp.css">
+<script type="importmap">{"imports":{"three":"./assets/vendor/three.module.min.js","three/addons/":"./assets/vendor/addons/"}}</script>
+<script type="module" src="assets/lp.js"></script>
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="./" aria-label="MakerChip Figure Studio トップ"><strong>MakerChip</strong><small>FIGURE STUDIO</small></a>
+  <nav class="site-nav" aria-label="ページ内">
+    <a href="#about">はじめに</a><a href="#steps">つくり方</a><a href="#lineup">衣装</a><a href="#print">印刷</a><a href="#faq">FAQ</a>
+  </nav>
+  <a class="button primary small" href="app/">Studioをひらく<span aria-hidden="true">→</span></a>
+</header>
+
+<main>
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero-copy">
+    <p class="eyebrow">A LITTLE FIGURE. ALL YOURS.</p>
+    <h1 id="hero-title">着せ替えて、<br>つくろう。</h1>
+    <p class="lead">20種類の上着・ボトムス・靴を組み合わせて、MakerChipをはめ込む小さなフィギュアを。色を添えたら、3Dプリント用のSTLまでブラウザだけで書き出せます。</p>
+    <div class="hero-actions">
+      <a class="button primary" href="app/">Studioをひらく<span aria-hidden="true">→</span></a>
+      <a class="button soft" href="#steps">つくり方を見る</a>
+    </div>
+    <dl class="stats">
+    <div><dt>衣装</dt><dd>20<small>種類</small></dd></div>
+    <div><dt>組み合わせ</dt><dd>8,000<small>通り</small></dd></div>
+    <div><dt>パーツ</dt><dd>7<small>点</small></dd></div>
+    <div><dt>インストール</dt><dd>0<small>不要</small></dd></div>
+    </dl>
+  </div>
+
+  <div class="hero-stage" id="hero-stage" aria-label="着せ替えできる3Dフィギュア">
+    <div class="hero-canvas" id="hero-canvas"><div class="floor" aria-hidden="true"></div></div>
+    <p class="stage-state loading" aria-live="polite">3Dを読み込んでいます…</p>
+    <p class="stage-state error">3Dを表示できませんでした。<a href="app/">Studio</a>でお試しください。</p>
+    <div class="hero-panel">
+      <ul class="hero-wear">
+        <li><button class="swap" data-swap="upper" aria-label="上着だけ着替える"><small>上着</small><strong data-hero="upper"></strong><span aria-hidden="true">↻</span></button></li>
+        <li><button class="swap" data-swap="lower" aria-label="ボトムスだけ着替える"><small>ボトムス</small><strong data-hero="lower"></strong><span aria-hidden="true">↻</span></button></li>
+        <li><button class="swap" data-swap="shoes" aria-label="靴だけ着替える"><small>靴</small><strong data-hero="shoes"></strong><span aria-hidden="true">↻</span></button></li>
+      </ul>
+      <div class="hero-panel-actions">
+        <button class="button soft small" id="hero-shuffle">ぜんぶ着替える</button>
+        <a class="button dark small" id="hero-make" href="app/">この組み合わせで作る<span aria-hidden="true">→</span></a>
+      </div>
+      <p class="hint">ドラッグで回転できます</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="about" aria-labelledby="about-title">
+  <p class="section-no">00 / はじめに</p>
+  <h2 id="about-title">小さな相棒を、<br>あなたらしく。</h2>
+  <p class="section-lead">MakerChipは、3Dプリントを楽しむメイカーのための、カスタマイズできる小さなトークン。自分でデザインして刷り、名刺がわりに交換したり、集めたりして楽しめます。詳しくは<a href="https://makerchip.app/" target="_blank" rel="noopener">makerchip.app</a>へ。</p>
+  <p class="section-lead">MakerChip Figure Studioは、そのチップを顔にする約2頭身のフィギュアのジェネレーターです。頭のリングは直径40 mm・厚さ3 mmのチップに合わせて設計し、服と靴は差し込み式。好きな衣装を選んで、色を決めて、そのまま3Dプリンタへ。</p>
+  <div class="features">
+    <article class="card">
+      <span class="card-no">A</span>
+      <h3>ブラウザだけで完結</h3>
+      <p>インストールもアカウントも不要。形状の生成はブラウザの中で行い、データをサーバーへ送りません。</p>
+    </article>
+    <article class="card">
+      <span class="card-no">B</span>
+      <h3>8,000通り、どれでも組める</h3>
+      <p>腰と足首の接続を全衣装で共通化。全組み合わせについて、部品どうしが干渉しないことを数値で検査しています。</p>
+    </article>
+    <article class="card">
+      <span class="card-no">C</span>
+      <h3>刷れる形で書き出し</h3>
+      <p>部品ごとのSTLか、色付きでプレートに並べた3MFを、造形向き・mm単位で。首・腰・左右の足の穴は、プリンタに合わせて接続ごとに調整できます。</p>
+    </article>
+  </div>
+  <div class="parts">
+    <h3>7つのパーツで、1体に。</h3>
+    <ol class="parts-list">
+      <li><b>前リング・後リング</b><span>MakerChipを両面から挟む頭部。首の六角ピンで上着に差し込みます</span></li>
+      <li><b>チップ</b><span>直径40 mm・厚さ3 mmのダミー。実物がなくても形を確かめられます</span></li>
+      <li><b>上着</b><span>首の六角穴と、腰の穴を持つ上半身</span></li>
+      <li><b>ボトムス</b><span>腰の凸部と、左右の足の穴を持つ下半身</span></li>
+      <li><b>左の靴・右の靴</b><span>足のピンでボトムスに差し込みます。左右は別々に調整可能</span></li>
+    </ol>
+  </div>
+</section>
+
+<section class="section" id="steps" aria-labelledby="steps-title">
+  <p class="section-no">01–03 / つくり方</p>
+  <h2 id="steps-title">3ステップで、<br>STLまで。</h2>
+  <ol class="steps">
+    <li class="step">
+      <figure><img src="assets/screens/choose.webp" alt="上着・ボトムス・靴の線画を矢印で切り替える画面" loading="lazy" width="1200" height="800"></figure>
+      <p class="step-no">01</p><h3>パーツを選ぶ</h3>
+      <p>上着・ボトムス・靴を、矢印または一覧から選びます。線画のモンタージュで、組み合わせをすぐ確かめられます。</p>
+    </li>
+    <li class="step">
+      <figure><img src="assets/screens/edit.webp" alt="3Dのフィギュアと色を変えるパーツのチップ、パレット" loading="lazy" width="1200" height="800"></figure>
+      <p class="step-no">02</p><h3>3Dで仕上げる</h3>
+      <p>「これで作る」で同じ場所に3Dが現れます。パーツのチップか、3Dの部位を直接タップして色を選びましょう。</p>
+    </li>
+    <li class="step">
+      <figure><img src="assets/screens/export.webp" alt="パーツと接続ごとのクリアランスを調整する画面" loading="lazy" width="1200" height="800"></figure>
+      <p class="step-no">03</p><h3>ダウンロード</h3>
+      <p>必要ならクリアランスを調整して、STLと設定JSONのZIP、または色付きの3MFで保存。スライサーへ100%で読み込みます。</p>
+    </li>
+  </ol>
+</section>
+
+<section class="section" id="lineup" aria-labelledby="lineup-title">
+  <p class="section-no">THE WARDROBE / 衣装</p>
+  <h2 id="lineup-title">20の衣装を、<br>自由に着回す。</h2>
+  <p class="section-lead">上着・ボトムス・靴はそれぞれ別のパーツ。宇宙飛行士の上着にお祭り法被のボトムス、なんて組み合わせもそのまま刷れます。気になる衣装を選ぶと、Studioがその衣装で開きます。</p>
+  <ul class="lineup" id="lineup-grid"></ul>
+</section>
+
+<section class="section" id="print" aria-labelledby="print-title">
+  <p class="section-no">PRINT / 印刷のめやす</p>
+  <h2 id="print-title">プリンタへ、<br>そのまま。</h2>
+  <dl class="spec">
+    <div><dt>確認している環境</dt><dd>Bambu Lab A1 mini / PLA / 0.4 mmノズル / テクスチャPEI</dd></div>
+    <div><dt>書き出し</dt><dd>部品ごとのSTL(mm・造形向き・底面Z=0)、settings.json、README.txtのZIP / 色付き3MF(A1 miniの180 mm角プレートに配置済み)</dd></div>
+    <div><dt>大きさ</dt><dd>全高 約97 mm</dd></div>
+    <div><dt>プリント設定</dt><dd>書き出すのは形状・色・配置だけです。プリンタ・材料・積層・サポートなどの設定は、お使いの環境に合わせてスライサーで見直してください</dd></div>
+    <div><dt>クリアランス初期値</dt><dd>腰・左右の足 片側0.075 mm / 首 0 mm(暫定)</dd></div>
+    <div><dt>色</dt><dd>3MFは同じ色のパーツごとに色を持ち、スライサーで各色をフィラメントに割り当てます。STLは単色の形状で、色はsettings.jsonに保存されます</dd></div>
+  </dl>
+</section>
+
+<section class="section" id="faq" aria-labelledby="faq-title">
+  <p class="section-no">FAQ</p>
+  <h2 id="faq-title">よくある質問</h2>
+  <div class="faq">
+    <details><summary>MakerChipとは?</summary><p>3Dプリントでつくる、メイカーのためのカスタマイズできるトークンです。デザインして、刷って、交換・コレクションできます。詳しくは<a href="https://makerchip.app/" target="_blank" rel="noopener">makerchip.app</a>をご覧ください。</p></details>
+    <details><summary>選んだ色のまま印刷できますか?</summary><p>「色付き3MFで保存」を使うと、パーツごとの色を持った3MFをプレートに並べた状態で書き出せます。スライサーで開いたら、各色を手持ちのフィラメントに割り当て、プリント設定をお使いの環境に合わせて見直してください。STLは単色の形状です。</p></details>
+    <details><summary>作った組み合わせを保存できますか?</summary><p>「設定を保存」でJSONを書き出し、「設定を読込」で元に戻せます。ブラウザにも自動で保存されます。</p></details>
+    <details><summary>MakerChipが手元になくても作れますか?</summary><p>作れます。同じ寸法(直径40 mm・厚さ3 mm)のダミーチップもSTLで書き出せます。</p></details>
+    <details><summary>データはどこかへ送信されますか?</summary><p>いいえ。部品データを読み込んだあとは、形状の生成も書き出しもブラウザの中で行います。</p></details>
+    <details><summary>スマートフォンでも使えますか?</summary><p>WebGLに対応したブラウザで動作し、画面はスマートフォンの幅にも合わせています。STLの保存とスライスにはPCが便利です。</p></details>
+    <details><summary>ライセンスは?</summary><p>MITライセンスで公開しています。ソースコードは<a href="https://github.com/y-morishita-biz/makerchip-figure-studio" target="_blank" rel="noopener">GitHub</a>にあります。</p></details>
+  </div>
+</section>
+
+<section class="cta" aria-labelledby="cta-title">
+  <h2 id="cta-title">さあ、着せ替えよう。</h2>
+  <a class="button primary" href="app/">Studioをひらく<span aria-hidden="true">→</span></a>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div>
+    <a class="brand" href="./"><strong>MakerChip</strong><small>FIGURE STUDIO</small></a>
+    <p>ブラウザで着せ替えて、3Dプリントするフィギュア・ジェネレーター。</p>
+  </div>
+  <nav aria-label="リンク">
+    <a href="app/">Studio</a>
+    <a href="https://github.com/y-morishita-biz/makerchip-figure-studio" target="_blank" rel="noopener">GitHub</a>
+    <a href="https://x.com/penomo" target="_blank" rel="noopener">X @penomo</a>
+  </nav>
+  <p class="credit">制作: penomo / dotting dots ・ MIT License ・ 技術: Three.js / Manifold / fflate</p>
+</footer>
+</body>
+</html>
