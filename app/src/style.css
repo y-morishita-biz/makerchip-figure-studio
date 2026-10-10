@@ -91,3 +91,8 @@ select{appearance:none;-webkit-appearance:none;padding-right:40px;background-ima
 /* Secondary export: colored 3MF laid out on the plate. */
 #download-3mf{width:100%;margin-top:12px;gap:10px}
 #download-3mf .icon{width:16px;height:16px}
+
+/* Logo: both lines centered. text-indent offsets the trailing letter-spacing of the wide-tracked subtitle. */
+.brand{text-align:center}
+.brand small{text-indent:.38em}
+@media(max-width:800px){.brand small{text-indent:.26em}}

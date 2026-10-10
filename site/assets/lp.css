@@ -161,3 +161,7 @@ h3{font-size:19px;margin:0 0 8px;letter-spacing:-.02em}
  .site-footer{grid-template-columns:1fr}
 }
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{transition-duration:.001ms!important;animation-duration:.001ms!important;scroll-behavior:auto!important}}
+
+/* Logo: both lines centered, matching the Studio. text-indent offsets the subtitle's trailing letter-spacing. */
+.brand{text-align:center}
+.brand small{text-indent:.38em}
