@@ -13,7 +13,7 @@ dialog{width:min(850px,92vw);max-height:87svh;overflow:auto;border:1px solid #fb
 #legacy-art{position:absolute;inset:35% 10% auto;text-align:center;line-height:2;color:var(--muted)}
 @media(min-width:801px){.choose-copy h1{font-size:clamp(50px,6.25vw,94px)}.hero-art{transform:translateY(22px) scale(1.22)}.selection-row{padding:17px 0}.selection-row small{display:none}.selection-row strong{font-size:16px}.selection-row>.category-icon{display:block;opacity:1;width:29px;height:29px}.selection-row .icon:not(.category-icon){margin-left:auto}.story>.choose-copy .eyebrow{display:none}.story{padding-top:40px}#selection{margin-top:45px}.selection-row>span:nth-child(2){flex:1}.actions{margin-top:32px}}
 @media(max-width:800px){.selection-row>.category-icon{display:none}}
-@media(min-width:801px){.story{min-width:0}.choose-copy h1{font-size:clamp(44px,5.55vw,82px);white-space:nowrap}.stage{height:min(850px,calc(100svh - 170px));overflow:clip}.hero-art{transform:scale(1.17)}#view-tools{bottom:30px}#status{bottom:5px}}
+@media(min-width:801px){.story{min-width:0}.choose-copy h1{font-size:clamp(40px,4.6vw,68px);white-space:nowrap}.stage{height:min(850px,calc(100svh - 170px));overflow:clip}.hero-art{transform:scale(1.17)}#view-tools{bottom:30px}#status{bottom:5px}}
 #import-mobile{display:none}#settings-error{font-size:12px;color:#9c3000;line-height:1.7;margin-top:14px}
 @media(max-width:800px){h1 br{display:initial}footer{align-items:center;padding-top:18px}#import-mobile{display:inline-flex;font-size:10px;padding:8px 0;white-space:nowrap}footer span{font-size:7px;margin-left:auto}}
 /* Align thumbnails using the registered image coordinate, independent of card width. */

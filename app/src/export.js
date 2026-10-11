@@ -23,8 +23,8 @@ export function exportBundle(models,input){
   const config=validateConfig(input),files={};
   for(const m of models)files[`${m.id}.stl`]=binarySTL(m);
   files['settings.json']=strToU8(JSON.stringify(config,null,2)+'\n');
-  const note=isOutfitSet(config.assetSet)?'六角ピン式。腰・左右足・首の穴のみ設定値を適用。採用済み頭部のねじ・チップ嵌合寸法は固定です。色はsettings.jsonに保存され、STLには含まれません。\n':'';
-  files['README.txt']=strToU8(note+'MakerChip Generator\n単位: mm。100%の縮尺で読み込んでください。各STLは造形向きで底面をZ=0へ配置済みです。\nクリアランスはsettings.jsonに記録。片側量は穴の幅・径へ2倍を加算し、チップ厚みは全体差を加算しています。\nこの出力は未スライスです。プリンタ・材料・積層・サポートの設定はお使いの環境に合わせて見直し、嵌合を確認してください(確認環境: Bambu Lab A1 mini / PLA / 0.4 mm)。\n');
+  const note=isOutfitSet(config.assetSet)?'クリアランスの設定値を反映したのは首・腰・左右の足の穴です。頭部(リングとチップ)の寸法は固定です。色はsettings.jsonに保存され、STLには含まれません。\n':'';
+  files['README.txt']=strToU8(note+'MakerChip Figure Studio\n単位はmmです。スライサーへ100%の縮尺で読み込んでください。各STLは造形向きで、底面をZ=0に置いています。\nクリアランスはsettings.jsonに記録しています。片側の値は、穴の幅・径へ2倍して加えています。チップの厚みには全体の差を加えています。\nこの出力は未スライスです。プリンタ・材料・積層・サポートの設定はお使いの環境に合わせて見直し、嵌合を確認してください(確認環境: Bambu Lab A1 mini / PLA / 0.4 mm)。\n');
   return zipSync(files,{level:6});
 }
 

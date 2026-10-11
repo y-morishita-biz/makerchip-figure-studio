@@ -35,8 +35,8 @@ export const CONNECTIONS = [
   {id:'chipAxial',label:'チップの厚み方向',group:'ring',male:[3],unit:'全体差',max:1,description:'厚み3 mmに加える空間'},
 ];
 export const PRESETS = {
-  local:{name:'A1 mini · 暫定',note:'腰・左右の足は片側0.075 mmの暫定値。実機で嵌合を確認してください。',clearances:{neckPin:0,waist:.075,footLeft:.075,footRight:.075,springBottom:.2,springTop:.2,ringPins:.075,chipRadial:.2,chipAxial:.4},springWidth:.8},
-  v1:{name:'試作 v1',note:'試作v1のクリアランス値を適用します。衣装やモデルは変わりません。',clearances:{neckPin:0,waist:.2,footLeft:.2,footRight:.2,springBottom:.2,springTop:.2,ringPins:.2,chipRadial:.2,chipAxial:.4},springWidth:1},
+  local:{name:'標準 · 0.075 mm',note:'腰と左右の足を片側0.075 mmにします。Bambu Lab A1 miniで調整中の値です。',clearances:{neckPin:0,waist:.075,footLeft:.075,footRight:.075,springBottom:.2,springTop:.2,ringPins:.075,chipRadial:.2,chipAxial:.4},springWidth:.8},
+  v1:{name:'ゆるめ · 0.2 mm',note:'腰と左右の足を片側0.2 mmにします。差し込みがきついときに使います。',clearances:{neckPin:0,waist:.2,footLeft:.2,footRight:.2,springBottom:.2,springTop:.2,ringPins:.2,chipRadial:.2,chipAxial:.4},springWidth:1},
 };
 export function presetConfig(id='local') {
   const p=PRESETS[id];if(!p)throw Error('不明なプリセットです');
