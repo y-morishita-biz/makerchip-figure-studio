@@ -165,3 +165,8 @@ h3{font-size:19px;margin:0 0 8px;letter-spacing:-.02em}
 /* Logo: both lines centered, matching the Studio. text-indent offsets the subtitle's trailing letter-spacing. */
 .brand{text-align:center}
 .brand small{text-indent:.38em}
+
+/* Hero title: two fixed lines (<br>). Size follows the copy column so a line never wraps mid-phrase at any width. */
+.hero-copy{container-type:inline-size}
+#hero-title{font-size:clamp(40px,13cqi,80px);white-space:nowrap}
+@media(max-width:640px){#hero-title{font-size:min(42px,11vw)}}
